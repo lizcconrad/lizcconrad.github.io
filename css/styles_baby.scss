@@ -1,0 +1,228 @@
+:root {
+  --dark-dark-gray: #1a1d21;
+  --dark-gray: #272C33;
+  --white: #fff;
+  --lavender: #A6A6ED;
+  --string-green: #96C374;
+  --highlight-gray: #9a989873;
+  --reserved-purple: #C774DF;
+  --var-red: #E26B73;
+  --syntax-cyan: #50B6C3;
+  --comment-gray: #9BA4B3;
+  --hr-gray: #505358;
+  --data-orange: #CF9860;
+}
+
+body {
+  font-family: 'Source Code Pro', monospace;
+  background: var(--dark-gray);
+  color: white;
+}
+
+hr {
+  border-color: var(--hr-gray);
+  background-color: var(--hr-gray);
+  color: var(--hr-gray);
+}
+
+#liz {
+  color: var(--syntax-cyan);
+}
+
+#conrad {
+  color: var(--reserved-purple);
+}
+
+span.bold {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+a, a:hover {
+  color: var(--white);
+}
+
+i {
+  color: var(--white);
+}
+
+li.nav-item:hover {
+  i {
+    color: var(--string-green);
+  }
+
+  a {
+    color: var(--string-green);
+  }
+}
+
+.selected {
+  background-color: var(--highlight-gray);
+}
+
+#file-nav {
+  background-color: var(--dark-dark-gray);
+}
+
+.resume-section {
+  padding: 3rem;
+}
+
+.sectiontitle {
+  padding: 1rem 0;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--comment-gray);
+}
+
+.funcwrapper {
+  border-left: 0.1rem solid var(--hr-gray);
+  padding-left: 1rem;
+}
+
+.func-top {
+  margin-bottom: 2rem;
+}
+
+.indent {
+  margin-left: 3rem;
+  font-size: 1.2rem;
+}
+
+.indentmini {
+  margin-left: 3rem;
+}
+
+.func-bottom {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.funcdef {
+  color: var(--reserved-purple);
+}
+
+.funcname {
+  color: var(--var-red);
+}
+
+.string {
+  color: var(--string-green);
+}
+
+.comment {
+  color: var(--comment-gray);
+}
+
+.info {
+  color: var(--data-orange);
+}
+
+.syntax {
+  color: var(--syntax-cyan);
+}
+
+.skill {
+  margin: 0 0.2rem;
+  color: var(--var-red);
+}
+
+@media (max-width: 768px) {
+  .navicon {
+    display: none;
+  }
+
+  #sourcenav {
+    display: none;
+  }
+
+  #pagecontent {
+    margin-top: 6rem;
+  }
+
+  .resume-section {
+    padding-left: 1rem;
+  }
+
+  .indent {
+    margin-left: 1.8rem;
+  }
+}
+
+@media (min-width: 769px) and (min-width: 992px) {
+
+  .navbar-brand {
+    width: 100%;
+  }
+
+  #liz {
+    font-weight: 300;
+    font-size: 2rem;
+  }
+
+  #conrad {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-left: 4.5rem;
+  }
+
+  .wrapper {
+    display: flex;
+    align-items: stretch;
+  }
+
+  #file-nav {
+    align-items: flex-start;
+    flex-direction: column;
+    min-width: 275px;
+    max-width: 275px;
+    min-height: 100vh;
+    padding: 0;
+  }
+
+  #navlist {
+    margin-top: 2rem;
+    width: 100%;
+
+    li {
+      width: 100%;
+    }
+  }
+
+  #name {
+    padding-left: 1rem;
+  }
+
+  #navbarSupportedContent {
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .nav-link {
+    display: inline;
+  }
+
+  .nav-item {
+    padding: 0.2rem 0;
+  }
+
+  .subitem {
+    padding-left: 2rem;
+    margin: 0.5rem 0;
+  }
+
+  .navicon {
+    margin-right: 0.5rem;
+    margin-left: 1rem;
+  }
+
+  #sourcenav {
+    padding: 0 0.5rem;
+    color: white;
+  }
+
+
+  #pagecontent {
+    padding-left: 300px;
+  }
+}
